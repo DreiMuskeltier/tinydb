@@ -1,0 +1,3 @@
+import tinydb
+
+print("Hello")
