@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>687</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Daten in TinyDB laden</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="labelName">
+        <property name="text">
+         <string>Name:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="inputName"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="labelAge">
+        <property name="text">
+         <string>Alter:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="inputAge"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="labelCity">
+        <property name="text">
+         <string>Stadt:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="inputCity"/>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="buttonSave">
+        <property name="text">
+         <string>In TinyDB speichern</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QTextEdit" name="logOutput">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="placeholderText">
+         <string>Status / Rückmeldungen…</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="rowCount">
+         <number>0</number>
+        </property>
+        <property name="columnCount">
+         <number>4</number>
+        </property>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="pushLoadDB">
+        <property name="text">
+         <string>Datenbank laden</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="buttonDelete">
+      <property name="text">
+       <string>Eintrag löschen</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>687</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuDatei">
+    <property name="title">
+     <string>Datei</string>
+    </property>
+    <addaction name="actionBeenden"/>
+   </widget>
+   <addaction name="menuDatei"/>
+  </widget>
+  <action name="actionBeenden">
+   <property name="text">
+    <string>Beenden</string>
+   </property>
+  </action>
+  <addaction name="actionBeenden"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
